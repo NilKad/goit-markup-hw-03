@@ -1,0 +1,227 @@
+/* Logo- Raleway w:700 s:26 hl:30.52 coor:#2196F3 #000000
+          Oleo Script w:400 s:26 lh:35.96 color:#FFFFFF
+Основной шрифт текста - Roboto w:400 s:14 color:#757575 
+H1 - Roboto w:900 s:44px lh:60px color:#ffffff
+H2 - Roboto w700 s:36 lh:42.19 color:#212121
+H3 - Roboto w700 s14 color:#212121
+active color - 
+
+*/
+:root {
+  --main-text-color: #757575;
+  --main-text-second-color: #212121;
+  --main-bg-color: #ffffff;
+  --main-sec-bg: #2f303a;
+  --main-logo-first-color: #2196f3;
+  --main-logo-color: #000000;
+  --main-logo-color-footer: #ffffff;
+  --main-sec-color: #ffffff;
+  --main-footer-color: #ffffff;
+  --main-active-color: #2196f3;
+  --main-active-bg: #ffffff;
+  --active-bt-color: #ffffff;
+  --active-bt-bg: #2196f3;
+  --footer-sec-color: rgba(255, 255, 255, 0.6);
+  --filter-bt-bg: #f5f4fa;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--main-bg-color);
+}
+
+.accent {
+  color: var(--main-active-color);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.tittle {
+  color: var(--main-text-second-color);
+  font-weight: 700;
+}
+
+.works-tittle,
+.team-tittle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--main-text-second-color);
+}
+.button {
+  cursor: pointer;
+}
+
+/* LOGO */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--main-logo-color);
+  text-decoration: none;
+}
+.logo-first-color {
+  color: var(--main-logo-first-color);
+}
+/* .logo-footer */
+
+/* header */
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-text-second-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current {
+  color: var(--main-active-color);
+}
+
+/* .site-nav .link.current {
+  color: var(--main-active-color);
+} */
+
+/* nav contact  */
+.contact .link {
+  color: var(--main-text-color);
+}
+.contact .link:hover,
+.contact .link:focus {
+  color: var(--main-active-color);
+}
+
+/* heroes */
+.heroes {
+  background-color: var(--main-sec-bg);
+  letter-spacing: 0.06em;
+}
+
+.heroes-tittle,
+.heroes-button {
+  color: var(--main-sec-color);
+  letter-spacing: 0.06em;
+}
+
+.heroes-tittle {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* letter-spacing: 0.06em; */
+
+  /* text-align: center; */
+}
+.heroes .button,
+.portfolio .button.current {
+  color: var(--main-sec-color);
+  background-color: var(--main-active-color);
+  border: none;
+}
+.heroes-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* benefits */
+
+.benefits-list-tittle {
+  color: var(--main-text-second-color);
+  /* font-weight: 700; */
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.benefits-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Чем мы занимаемся */
+/* .works-tittle {
+} */
+
+/* Наша комманда */
+
+.team-list-tittle,
+.team-list-text {
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.team-list-tittle {
+  font-weight: 500;
+}
+
+/* .team-list-text {
+
+} */
+
+/* footer */
+.footer {
+  background: var(--main-sec-bg);
+  color: var(--main-sec-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+}
+
+.footer .link {
+  color: var(--footer-sec-color);
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.logo-footer {
+  color: var(--main-logo-color-footer);
+}
+
+.footer-address .link.map {
+  color: var(--main-sec-color);
+}
+
+.footer-address .link:hover,
+.footer-address .link:focus {
+  color: var(--main-active-color);
+}
+
+/* Портфолио */
+.portfolio-tittle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  color: var(--main-text-color);
+  line-height: 1.88;
+  /* letter-spacing: 0.03em; */
+}
+
+.portfolio-button {
+  color: var(--main-text-second-color);
+  background: var(--filter-bt-bg);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border: none;
+  /* text-align: center; */
+}
+.portfolio .button:hover,
+.portfolio .button:focus {
+  color: var(--active-bt-color);
+  background-color: var(--active-bt-bg);
+}
