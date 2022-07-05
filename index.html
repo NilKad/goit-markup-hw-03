@@ -15,32 +15,34 @@
   <body>
     <!-- Шапка -->
     <header class="header">
-      <nav class="site-nav">
-        <a href="./index.html" class="logo"><span class="logo-first-color">Web</span>Studio</a>
-        <ul class="list">
-          <li><a href="./index.html" class="link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo"><span class="logo-first-color">Web</span>Studio</a>
+          <ul class="list">
+            <li><a href="./index.html" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
 
-      <ul class="contact list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
-        </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-      </ul>
+        <ul class="contact list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
+          </li>
+          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
     <!-- Уникальный контеест -->
     <main>
       <!-- Main -->
-      <section class="heroes">
+      <section class="heroes outline">
         <h1 class="heroes-tittle title">Эффективные решения <br />для вашего бизнеса</h1>
         <button type="button" class="heroes-button button">Заказать услугу</button>
       </section>
 
       <!-- Преимущества -->
-      <section class="benefits">
+      <section class="benefits container">
         <h2 class="benefits-tittle">Оссобенности</h2>
         <ul class="list">
           <li>
@@ -70,7 +72,7 @@
         </ul>
       </section>
 
-      <section class="works">
+      <section class="works container">
         <h2 class="works-tittle">Чем мы занимаемся</h2>
         <ul class="list">
           <li><img src="./images/zan1.jpg" alt="Занимаемся разработкой" width="370" /></li>
@@ -79,7 +81,7 @@
         </ul>
       </section>
 
-      <section class="team">
+      <section class="team container">
         <h2 class="team-tittle tittle">Наша команда</h2>
         <ul class="list">
           <li>
@@ -106,20 +108,22 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="logo-footer logo"
-        ><span class="logo-first-color">Web</span>Studio</a
-      >
-      <address class="footer-address">
-        <ul class="list">
-          <li>
-            <a href="https://goo.gl/maps/WHBGWg1it3eYbs4MA" class="link map" target="_blank"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li><a href="mailto:info@example.com" class="link">info@example.com</a><br /></li>
-          <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="./index.html" class="logo-footer logo"
+          ><span class="logo-first-color">Web</span>Studio</a
+        >
+        <address class="footer-address">
+          <ul class="list-in-block list">
+            <li>
+              <a href="https://goo.gl/maps/WHBGWg1it3eYbs4MA" class="link map" target="_blank"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li><a href="mailto:info@example.com" class="link">info@example.com</a><br /></li>
+            <li><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
