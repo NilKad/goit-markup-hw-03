@@ -23,6 +23,7 @@ active color -
   --active-bt-color: #ffffff;
   --active-bt-bg: #2196f3;
   --active-bt-forma-bg: #188ce8;
+  --header-border-color: #ececec;
   --footer-sec-color: rgba(255, 255, 255, 0.6);
   --portfolio-border: #eeeeee;
 }
@@ -41,6 +42,11 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   background-color: var(--main-bg-color);
+}
+img {
+  display: block;
+  /* max-width: 100%; */
+  height: auto;
 }
 
 .accent {
@@ -61,14 +67,11 @@ body {
   font-weight: 700; */
 }
 .container {
-  /* margin-top: 0;
-  margin-bottom: 0; */
-  /* margin-top: 94px; */
   margin: 0 auto;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 1px solid red; */
 }
 .container.no-margin {
   margin-top: 0;
@@ -105,13 +108,13 @@ body {
 }
 
 /* Header */
-
+.header {
+  border-bottom: 1px solid var(--header-border-color);
+}
 .header .container {
   /* margin-top: 0; */
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 /* LOGO */
 .logo {
@@ -188,8 +191,6 @@ body {
 .section.heroes {
   text-align: center;
   margin-top: 0;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
   background-color: var(--main-sec-bg);
 }
 
@@ -302,7 +303,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
 }
 .footer .container {
   padding-top: 60px;
@@ -336,8 +336,9 @@ body {
 }
 
 /* Портфолио */
-.portfolio.section {
+.section  .portfolio {
   margin-bottom: 94px;
+
 }
 .portfolio-filter {
   display: flex;
@@ -354,23 +355,14 @@ body {
 }
 
 .portfolio-list .item {
-  /* position: relative; */
-  /* display: block; */
-  /* box-sizing: border-box; */
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid var(--portfolio-border);
+  min-width: 360px;
 }
-.img-portfolio {
-  /* position: relative; */
-  /* padding: 5px; */
-  /* width: 370px; */
-}
-.portfolio img {
-  /* width: 100%; */
-  /* min-width: 360px; */
-  /* max-width: 370px; */
-}
+
 .portfolio .section-list-tittle {
+  margin-left: 24px;
+  margin-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -378,16 +370,12 @@ body {
   text-align: left;
 }
 .portfolio .section-text {
+  margin-left: 24px;
+  margin-bottom: 20px;
+  margin-top: 4px;
   color: var(--main-text-color);
   line-height: 1.88;
-  /* font-weight: 400; */
-  /* letter-spacing: 0.03em; */
-}
-.portfolio .section-text {
-  margin-top: 4px;
-}
-.portfolio .section-list-tittle {
-  margin-top: 20px;
+
 }
 
 .portfolio-button {
