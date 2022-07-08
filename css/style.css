@@ -79,7 +79,7 @@ img {
 }
 
 .section {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .section-tittle,
 .section-list-tittle {
@@ -189,6 +189,7 @@ img {
   margin-top: 30px;
 }
 .section.heroes {
+  padding-top: 0;
   text-align: center;
   margin-top: 0;
   background-color: var(--main-sec-bg);
@@ -336,8 +337,8 @@ img {
 }
 
 /* Портфолио */
-.section  .portfolio {
-  margin-bottom: 94px;
+.section.portfolio {
+  padding-bottom: 94px;
 
 }
 .portfolio-filter {
