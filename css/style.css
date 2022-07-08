@@ -26,6 +26,15 @@ active color -
   --footer-sec-color: rgba(255, 255, 255, 0.6);
   --portfolio-border: #eeeeee;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
@@ -345,12 +354,22 @@ body {
 }
 
 .portfolio-list .item {
+  /* position: relative; */
   /* display: block; */
   /* box-sizing: border-box; */
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid var(--portfolio-border);
 }
-
+.img-portfolio {
+  /* position: relative; */
+  /* padding: 5px; */
+  /* width: 370px; */
+}
+.portfolio img {
+  /* width: 100%; */
+  /* min-width: 360px; */
+  /* max-width: 370px; */
+}
 .portfolio .section-list-tittle {
   font-weight: 700;
   font-size: 18px;
