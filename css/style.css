@@ -62,10 +62,9 @@ img {
   text-decoration: none;
   color: inherit;
 }
-.tittle {
-  /* color: var(--main-text-second-color);
-  font-weight: 700; */
-}
+/* .tittle {
+
+} */
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -150,10 +149,9 @@ img {
 .site-nav .list {
   margin-left: 93px;
 }
-.site-nav .item {
-  /* margin-top: 32px;
-  margin-bottom: 32px;*/
-}
+/* .site-nav .item {
+
+} */
 
 .site-nav .link {
   display: block;
@@ -252,6 +250,9 @@ img {
 }
 
 /* Чем мы занимаемся */
+.section.whotis {
+  padding-bottom: 94px;
+}
 .whotis .list {
   display: flex;
 }
