@@ -291,6 +291,9 @@ ul {
 .team-list {
   display: flex;
 }
+.team-item {
+  background-color: var(--main-bg-color);
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
